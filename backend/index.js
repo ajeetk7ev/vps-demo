@@ -7,6 +7,10 @@ app.get("/health", (req, res) => {
       success:true,
       message:"Server is running"
    });
+});
+
+app.post("/api/users",(req, res) => {
+   console.log("This is api for user creation");
 })
 
 app.listen(3000,"0.0.0.0",() => {
