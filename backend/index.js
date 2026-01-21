@@ -3,7 +3,10 @@ import express from 'express';
 const app = express();
 
 app.get("/health", (req, res) => {
-   res.send("I am working fine")
+  res.send({
+     success:true,
+     messag:"Server is running"
+  })
 })
 
 app.listen(3000,"0.0.0.0",() => {
