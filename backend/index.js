@@ -7,6 +7,7 @@ app.get("/health", (req, res) => {
       success:true,
       message:"Server is running"
    });
+   console.log(Server is running);
 })
 
 app.listen(3000,"0.0.0.0",() => {
