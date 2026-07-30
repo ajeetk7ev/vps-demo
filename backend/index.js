@@ -13,6 +13,10 @@ app.post("/api/users",(req, res) => {
    console.log("This is api for user creation");
 })
 
+app.get("/api/users, (req, res) => {
+        consoel.log("This is the api for getting users);
+})
+
 app.listen(3000,"0.0.0.0",() => {
     console.log("Server is running at port 3000")
 })
