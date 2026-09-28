@@ -5,7 +5,8 @@ const app = express();
 app.get("/health", (req, res) => {
    res.json({
       success:true,
-      message:"Server is running"
+      message:"Server is running",
+      upTime:process.upTime(),
    });
 });
 
